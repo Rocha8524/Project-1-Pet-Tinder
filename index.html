@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS Files-->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <title>Project 1: Pet Tinder</title>
+
+<body class="container , text-center"
+    background="Assets/Media/depositphotos_180529816-stock-photo-pets-texture-background-raster.jpg">
+
+    <div id="title" class="jumbotron">
+        <header>
+            <strong>
+                <h1>Pet Tinder</h1>
+                <h5>Choose your new best friend</h5>
+            </strong>
+            <nav class="nav nav-pills justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meet-the-team.html">Meet The
+                            Team</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>About Us</h4>
+                    </div>
+                    <p>Hello and welcome to Pet Tinder. We are a group of dedicated and passionate animal enthusiasts
+                        who wants to make it easier for anyone looking for a pet to care for. We have partnered up with
+                        local breeders and animal shelters to ensure that the animals listed on the website are happy
+                        and healthy. We take time to ensure that any shelter and breeder we do buisness with are
+                        following state laws and are treating the animals in their temporary care with high ethical
+                        standards. If you are looking for a pet to love and are willing to provide them a loving
+                        environment, then choose the animal you wish to have and you will be given a selection of the
+                        breeds we have available.</p>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Dogs</h5>
+                    </div>
+                    <div id="dog-image" class="card-image">
+                        <img src="Assets/Media/landscape-1516402924-labrador-retriever-puppies.jpg"
+                            class="card-img">
+                    </div>
+                    <hr>
+                    <div class="card-text">
+                        <p>Man's Best Friend</p>
+                    </div>
+                    <div class="card-footer">
+                        <a id="dog-search" class="btn btn-primary" href="user-matches-dog.html">Click here for Dogs</a>
+                    </div>
+                </div><br>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Cats</h5>
+                    </div>
+                    <div id="cat-image">
+                        <img src="Assets/Media/skynews-kitten-cat_4627790.jpg" class="card-img">
+                    </div>
+                    <hr>
+
+                    <div class="card-text">
+                        <p>Women's Best Friend</p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a id="cat-search" class="btn btn-primary" href="user-matches-cat.html">Click here for Cats</a>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div id="searchedAnimal">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="jumbotron">
+        <strong>
+            <h4>© Rutgers Bootcamp Project #1 2019</h4>
+        </strong>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@petfinder/petfinder-js/dist/petfinder.min.js"></script>
+    <script src="Assets/javascript/javascriptDog.js"></script>
+</body>
+
+</html>

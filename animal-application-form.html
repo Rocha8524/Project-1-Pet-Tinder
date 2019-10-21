@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS Files-->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <title>Pet Tinder Application Form</title>
+</head>
+
+<body background="Assets\Media\depositphotos_130272982-stock-photo-group-of-pets-home-animals.jpg"
+    class="container , text-center">
+
+    <div id="title" class="jumbotron">
+        <header>
+            <strong>
+                <h1>Pet Tinder</h1>
+                <h5>Choose your new best friend</h5>
+            </strong>
+            <nav class="nav nav-pills justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meet-the-team.html">Meet The
+                            Team</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="application-form" class="contact">
+        <h2>Pet Application Form</h2>
+        <hr>
+
+        <form action="Assets\javascript\email-submission.php" method="post" enctype="text/plain">
+            <div class="form-row , justify-content-center">
+                <div class="col-md-6">
+                    <strong><label for="first-name" class="exampleFormControlInput1">First Name</label></strong>
+                    <input type="text" id="first-name" class="form-control mb-2" id="inlineFormInput"
+                        placeholder="First Name">
+                </div>
+
+                <div class="col-md-6">
+                    <strong><label for="last-name" class="exampleFormControlInput1">Last Name</label></strong>
+                    <input type="text" id="last-name" class="form-control mb-2" id="inlineFormInput"
+                        placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <strong><label for="address">Address</label></strong>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <strong><label for="address2">Address 2</label></strong>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <strong><label for="city">City</label></strong>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <div class="form-group col-md-4">
+                    <strong><label for="state">State</label></strong>
+                    <select id="state" class="form-control">
+                        <option>ALABAMA</option>
+                        <option>ALASKA</option>
+                        <option>ARIZONA</option>
+                        <option>ARKANSAS</option>
+                        <option>CALIFORNIA</option>
+                        <option>COLORADO</option>
+                        <option>CONNECTICUT</option>
+                        <option>DELAWARE</option>
+                        <option>FLORIDA</option>
+                        <option>GEORGIA</option>
+                        <option>HAWAII</option>
+                        <option>IDAHO</option>
+                        <option>ILLINOIS</option>
+                        <option>INDIANA</option>
+                        <option>IOWA</option>
+                        <option>KANSAS</option>
+                        <option>KENTUCKY</option>
+                        <option>LOUISIANA</option>
+                        <option>MAINE</option>
+                        <option>MARYLAND</option>
+                        <option>MASSACHUSETTS</option>
+                        <option>MICHIGAN</option>
+                        <option>MINNESOTA</option>
+                        <option>MISSISSIPPI</option>
+                        <option>MISSOURI</option>
+                        <option>MONTANA</option>
+                        <option>NEBRASKA</option>
+                        <option>NEVADA</option>
+                        <option>NEW HAMPSHIRE</option>
+                        <option>NEW JERSEY</option>
+                        <option>NEW MEXICO</option>
+                        <option>NEW YORK</option>
+                        <option>NORTH CAROLINA</option>
+                        <option>NORTH DAKOTA</option>
+                        <option>OHIO</option>
+                        <option>OKLAHOMA</option>
+                        <option>OREGON</option>
+                        <option>PENNSYLVANIA</option>
+                        <option>RHODE ISLAND</option>
+                        <option>SOUTH CAROLINA</option>
+                        <option>SOUTH DAKOTA</option>
+                        <option>TENNESSEE</option>
+                        <option>TEXAS</option>
+                        <option>UTAH</option>
+                        <option>VERMONT</option>
+                        <option>VIRGINIA</option>
+                        <option>WASHINGTON</option>
+                        <option>WEST VIRGINIA</option>
+                        <option>WISCONSIN</option>
+                        <option>WYOMING</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <strong><label for="zip">Zip</label></strong>
+                    <input type="text" class="form-control" id="zip">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4">
+                    <strong><label for="primary-number">Primary Number</label></strong>
+                    <input type="text" class="form-control" id="primary-number" placeholder="(111) 222-3334">
+                </div>
+                <div class="col-md-4">
+                    <strong><label for="secondary-number">Secondary Number</label></strong>
+                    <input type="text" class="form-control" id="secondary-number" placeholder="(111) 222-3334">
+                </div>
+                <div class="col-md-4">
+                    <strong><label for="email">Email</label></strong>
+                    <input type="email" class="form-control" id="email"
+                        placeholder="name@example.com">
+                </div>
+            </div><br>
+            <div class="col-sm-14">
+                <div class="form-group">
+                    <strong><label for="comment">Why are you looking to adopt a pet?</label></strong>
+                    <textarea class="form-control" id="comment" rows="4"></textarea>
+                </div>
+            </div>
+            <!--<div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Agree to terms and conditions
+                </label>
+            </div>-->
+        </form>
+    </div>
+    <br>
+
+    <a href="response-page.html"><input id="send-to-email" type="submit" value="Submit" class="btn btn-primary"></input></a>
+
+    <br><br>
+
+    <footer class="jumbotron , text-center">
+        <h4>© Rutgers Bootcamp Project 1 2019</h4>
+    </footer>
+
+    <!--<script>"Assets\javascript\email-submission.php"</script>-->
+
+</body>
+
+</html>
