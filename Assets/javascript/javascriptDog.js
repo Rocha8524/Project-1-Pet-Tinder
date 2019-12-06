@@ -1,41 +1,41 @@
-var animalIndex  = 0;
+var animalIndex = 0;
 var animalBreeds = [];
 var listOfBreeds;
-var currentPage =1;
+var currentPage = 1;
 var resultLimit = 30;
 var pf = new petfinder.Client({ apiKey: "OtOAvPPs5IfYjeg1yJ697I85pHRMkUZN3cTmFWoNp8U0AZIrp4", secret: "OhXZcmAgBeyDIUVmIJRqEFBOX6XYdZu59k7mXDPn" });
 
 getAnimals("Dog", currentPage, resultLimit);
 
-function getAnimals(type, page, numResults){
+function getAnimals(type, page, numResults) {
     var paramObject = {
         page: page,
         limit: numResults,
         type: type
     };
     pf.animal.search(paramObject)
-    .then(function (response) {
-        //console.log(response);
-        // Do something with response.data.animals
-        var results = response.data.animals;
-       console.log(results)
-        //showAnimals(results);
+        .then(function (response) {
+            //console.log(response);
+            // Do something with response.data.animals
+            var results = response.data.animals;
+            console.log(results)
+            //showAnimals(results);
 
-        listOfBreeds = showAnimals(results);
-        console.log(listOfBreeds);
-        //console.log("listOfBreeds", listOfBreeds);
+            listOfBreeds = showAnimals(results);
+            console.log(listOfBreeds);
+            //console.log("listOfBreeds", listOfBreeds);
 
-        showOneAnimal(listOfBreeds[animalIndex]);
-        wikiInfo(listOfBreeds[animalIndex].breeds.primary);
-    })
-    .catch(function (error) {
-        // Handle the error
-    });
+            showOneAnimal(listOfBreeds[animalIndex]);
+            wikiInfo(listOfBreeds[animalIndex].breeds.primary);
+        })
+        .catch(function (error) {
+            // Handle the error
+        });
 }
 
 
 function showAnimals(animalData) {
-    for (var i = 0; i < animalData.length -1 ; i++) {
+    for (var i = 0; i < animalData.length - 1; i++) {
         if (animalData[i].photos.length > 0) {
             animalBreeds.push(animalData[i]);
         }
@@ -67,17 +67,17 @@ function wikiInfo(animalBreed) {
     })
 }
 
-$("#reject-animal").on("click",function(){
+$("#reject-animal").on("click", function () {
     animalIndex++;
-    if(animalIndex <= listOfBreeds.length-1){
+    if (animalIndex <= listOfBreeds.length - 1) {
         console.log(animalBreeds[animalIndex]);
         showOneAnimal(animalBreeds[animalIndex]);
         wikiInfo(listOfBreeds[animalIndex].breeds.primary)
         console.log(listOfBreeds[animalIndex].breeds.primary)
-    }else{
+    } else {
         animalIndex = 0;
         listOfBreeds = [];
         getAnimals("Dog", currentPage++, resultLimit);
     }
-   
+
 })
